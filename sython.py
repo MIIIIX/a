@@ -72,7 +72,7 @@ async def join_channel():
 async def _(event):
     await event.edit(commands)
 
-@sython.on(events.NewMessage(outgoing=True, pattern=r"\.فحص"))
+@sython.on(events.NewMessage(outgoing=True, pattern=r"\.الخال"))
 async def _(event):
     start = datetime.datetime.now()
     await event.edit("جارٍ...")
@@ -80,7 +80,7 @@ async def _(event):
     ms = (end - start).microseconds / 1000
     await event.edit(f'''
 **☆ WELCOME TO SYTHON
-☆ VERSION : 1.3
+☆ VERSION : 2.7
 ☆ PING : `{ms}`
 ☆ DATE : `{m9zpi}`
 ☆ ID : `{event.sender_id}`
